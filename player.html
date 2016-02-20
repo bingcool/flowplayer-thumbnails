@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  	<head>
+    	<title>基于Flowplayer的视频预览</title>
+    	<link rel="stylesheet" href="./skin/minimalist.css">
+    	<link rel="stylesheet" href="http://demos.flowplayer.org/media/css/demo.css">
+    	<script type="text/javascript" src="./jquery-1.11.0.min.js"></script>
+    	<script type="text/javascript" src="./flowplayer6.js"></script>
+    	<script type="text/javascript" src="./thumbnails.js"></script>
+  	</head>
+ 	<body>
+    	<div id="content">
+      		<h1>Flowplayer thumbnails</h1>
+      		<div class="player1  no-toggle play-button">
+        
+      		</div>
+    	</div>
+    <script>
+	    $('.player1').flowplayer({
+	      // 自适应屏幕
+	      adaptiveRatio:true,
+	      // rtmp协议播放
+	      // rtmp:"rtmp://192.168.1.188:8081/vod",
+	      // 开启调试，可以在firefox下看到详细的播放信息
+	      debug:true,
+	      // 自动播放
+	      autoplay:true,
+	      // url的信息
+	      embed:false,
+	       // 视频信息
+	      clip: {
+	        // 视频名称
+	        title: 'Bauhausfffff',
+	        // 视频缩略图配置，将在thumbnails.js中用到的配置项
+	        thumbnails: {
+	          // 缩略图url路径
+	          template: 'thumbnails/myvideo{time}.jpg',
+	          //左右两侧的缩略图的高度 
+	          height: 100,
+	          // 主缩略图的高度，即鼠标移至进度条时弹出的即为主缩略图，在两边的为左右缩略图
+	          thumbwidth: 150,
+	          // 步调，即左右缩列图的每张相隔多少秒时间显示。
+	          step: 5
+
+	        },
+	        sources: [
+	           /* { 
+	              type: "video/flash",
+	              src:  "mp4:Video/201503/20150320105047342.mp4" 
+	            }*/
+	            { 
+	              type: "video/mp4",
+	              // 视频url，这里是我的url，输入自己的url即可
+	              src:  "http://192.168.1.188:8082/Video/201503/20150320105047342.mp4" 
+	            }
+
+	        ]
+	      },
+
+	    });
+    </script>
+  </body>
+</html>
+
