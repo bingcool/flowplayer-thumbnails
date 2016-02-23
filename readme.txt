@@ -19,8 +19,8 @@ thumbnails: {
 },
 
 其中template的url就是ffmpeg解压出来的每一帧图的thumbnails的路径，这个根据项目是指情况设定
-https://github.com/bingcool/flowplayer-thumbnails/master/13.png
+https://github.com/bingcool/flowplayer-thumbnails/blob/master/13.png
 
 demo的截图
-https://github.com/bingcool/flowplayer-thumbnails/master/14.png
+https://github.com/bingcool/flowplayer-thumbnails/blob/master/14.png
 
