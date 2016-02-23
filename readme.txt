@@ -1,5 +1,5 @@
 前言
-flowplayer实现播放视频时，能够实时预览不同时段的视频缩略图，可以给予用户很好的体验。下面将会详细说明
+flowplayer实现播放视频时，能够实时预览不同时段的视频缩略图，可以给予用户很好的体验。下面将会详细说明。本版本只适合flowplayer6.0的版本，低于6.0版本不支持。
 
 用法
 首先要用ffmpeg将一个视频的一帧一帧的图片分解出来，保存在thumbnails的文件夹中。
@@ -22,5 +22,6 @@ thumbnails: {
 https://github.com/bingcool/flowplayer-thumbnails/blob/master/13.png
 
 demo的截图
+当鼠标移至播放进度条是，可以预览视频的缩略图
 https://github.com/bingcool/flowplayer-thumbnails/blob/master/14.png
 
